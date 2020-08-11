@@ -48,3 +48,54 @@
   }
 }
 
+.error {
+  align-items: center;
+  display: flex;
+  color: $silver-chalice;
+  flex-direction: column;
+  justify-content: center;
+  height: 150px;
+
+  &-icon {
+    align-items: center;
+    border: 2px solid $silver-chalice;
+    border-radius: 50%;
+    color: $silver-chalice;
+    display: flex;
+    font-weight: 900;
+    height: 35px;
+    justify-content: center;
+    letter-spacing: 2.5px;
+    margin-bottom: 15px;
+    transform: rotate(90deg);
+    width: 35px;
+  }
+
+  &-msg {
+    font-size: 20px;
+  }
+}
+
+
+.spinner,
+.spinner::after {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+}
+
+.spinner {
+  animation: rotate 1.1s infinite linear;
+  border: 3px solid;
+  border-color: $ebony-clay $white $ebony-clay $ebony-clay;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

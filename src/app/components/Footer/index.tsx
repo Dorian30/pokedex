@@ -10,7 +10,7 @@ function Footer({ className = '' }: Props) {
   return (
     <footer className={`${styles.footer} ${className}`}>
       <p>Hecho por Dorian Alvarado</p>
-      <a className={styles.footerLink} href="#">
+      <a className={styles.footerLink} href="https://github.com/Dorian30/pokedex">
         Link a mi repo
       </a>
     </footer>

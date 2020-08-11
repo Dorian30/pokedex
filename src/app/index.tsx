@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 import usePokemons from '@hooks/usePokemons';
-import usePokemonsList from '@hooks/usePokemonsList';
 
 import styles from './styles.module.scss';
 import Header from './components/Header';
@@ -18,6 +17,13 @@ function App() {
         <section className={styles.results}>
           <h2 className={styles.resultsTitle}>Resultados de la búsqueda</h2>
           {pokemon && <Card {...pokemon} />}
+          {isError && (
+            <div className={styles.error}>
+              <span className={styles.errorIcon}>:(</span>
+              <p className={styles.errorMsg}>No pudimos encontrar tu pokemon</p>
+            </div>
+          )}
+          {isLoading && <div className={styles.spinner} />}
         </section>
       </main>
       <Footer />
