@@ -1,0 +1,31 @@
+@import 'variables/colors';
+
+.card {
+  display: flex;
+  width: fit-content;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &-cover {
+    border: 1px solid $silver-chalice;
+    height: 200px;
+    object-fit: cover;
+    width: 200px;
+  }
+
+  &-name {
+    align-items: center;
+    background: $ebony-clay;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 5px;
+    padding: 10px;
+    text-orientation: upright;
+    text-transform: uppercase;
+    width: 100%;
+    writing-mode: vertical-lr;
+  }
+}

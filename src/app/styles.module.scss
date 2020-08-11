@@ -1,0 +1,50 @@
+@import 'variables/colors';
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1400px;
+  min-height: 100vh;
+  padding: 40px 40px 0;
+}
+
+.main-container {
+  flex: 1;
+}
+
+.header {
+  margin-bottom: 50px;
+}
+
+.results {
+  margin-bottom: 40px;
+
+  &-title {
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 30px;
+  }
+}
+
+.footer {
+  align-items: center;
+  color: $white;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  position: relative;
+
+  &::after {
+    background: $ebony-clay;
+    content: '';
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 100vw;
+    z-index: -1;
+  }
+}
+

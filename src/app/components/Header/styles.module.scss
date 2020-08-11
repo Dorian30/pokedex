@@ -1,0 +1,35 @@
+@import 'variables/colors';
+
+.header{
+
+  &-title {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+
+  &-slogan {
+    color: $silver-chalice;
+    margin-bottom: 10px;
+  }
+}
+
+.search {
+
+  &-input {
+    border: 1px solid $silver-chalice;
+    flex: 5;
+    margin-right: 10px;
+    padding: 0 10px;
+  }
+
+  &-button {
+    align-items: center;
+    background: $ebony-clay;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    width: 120px;
+  }
+}
